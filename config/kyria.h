@@ -30,7 +30,7 @@
 #define CAD    &kp LC(LA(DEL))  // CTRL + ALT + DEL
 
 #define MEH      LC(LS(LALT))
-#define TAB_PREV &kp LC(PG_UP)
-#define TAB_NEXT &kp LC(PG_DN)
+#define TAB_PREV LC(PG_UP)
+#define TAB_NEXT LC(PG_DN)
 
 // clang-format on
