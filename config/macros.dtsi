@@ -1,0 +1,25 @@
+
+// #define U_MACRO(NAME, BINDINGS) \
+//     ZMK_MACRO(m_##NAME, \
+//         wait-ms = <40>; \
+//         tap-ms = <40>; \
+//         bindings = <BINDINGS>; \
+//     )
+
+#define U_MACRO(NAME, BINDINGS) \
+    ZMK_MACRO(m_##NAME, \
+        wait-ms = <40>; \
+        tap-ms = <40>; \
+        bindings \
+            = <&macro_press &kp LALT> \
+            , <&macro_tap BINDINGS> \
+            , <&macro_release &kp LALT> \
+  )
+
+//U_MACRO(forward, &macro_press &kp LALT &macro_tap &kp RIGHT &macro_release &kp LALT)
+ZMK_MACRO(my_zero_param_macro,
+
+    wait-ms = <30>;
+    tap-ms = <40>;
+    bindings = <&kp Z &kp M &kp K>;
+    )

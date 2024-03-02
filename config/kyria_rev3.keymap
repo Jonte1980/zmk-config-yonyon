@@ -7,9 +7,13 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <swedish.h>
-#include <kyria.h>
 
+#include <swedish.h>
+#include <yonyon.h>
+#include "macros.dtsi"
+
+// &left_encoder { resolution = <2>; };
+// &right_encoder { resolution = <2>; };
 &caps_word { continue-list = <SE_UNDS SE_MINS BACKSPACE>; };
 
 / {
